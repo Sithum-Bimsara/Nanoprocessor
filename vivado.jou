@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri May  3 10:53:05 2024
+# Process ID: 10280
+# Current directory: C:/Users/tharu/Vivado Projects/Nano Processor/NanoProcessor - Vanilla/NanoProcessor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21964 C:\Users\tharu\Vivado Projects\Nano Processor\NanoProcessor - Vanilla\NanoProcessor\NanoProcessor.xpr
+# Log file: C:/Users/tharu/Vivado Projects/Nano Processor/NanoProcessor - Vanilla/NanoProcessor/vivado.log
+# Journal file: C:/Users/tharu/Vivado Projects/Nano Processor/NanoProcessor - Vanilla/NanoProcessor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/tharu/Vivado Projects/Nano Processor/NanoProcessor - Vanilla/NanoProcessor/NanoProcessor.xpr}
+update_compile_order -fileset sources_1
+file mkdir C:/Users/tharu/Vivado Projects/Nano Processor/NanoProcessor - Vanilla/NanoProcessor/NanoProcessor.srcs/constrs_1
+file mkdir C:/Users/tharu/Vivado Projects/Nano Processor/NanoProcessor - Vanilla/NanoProcessor/NanoProcessor.srcs/constrs_1
+file mkdir C:/Users/tharu/Vivado Projects/Nano Processor/NanoProcessor - Vanilla/NanoProcessor/NanoProcessor.srcs/constrs_1/new
+file mkdir C:/Users/tharu/Vivado Projects/Nano Processor/NanoProcessor - Vanilla/NanoProcessor/NanoProcessor.srcs/constrs_1/new
+file mkdir C:/Users/tharu/Vivado Projects/Nano Processor/NanoProcessor - Vanilla/NanoProcessor/NanoProcessor.srcs/constrs_1/new
+file mkdir C:/Users/tharu/Vivado Projects/Nano Processor/NanoProcessor - Vanilla/NanoProcessor/NanoProcessor.srcs/constrs_1/new
+file mkdir C:/Users/tharu/Vivado Projects/Nano Processor/NanoProcessor - Vanilla/NanoProcessor/NanoProcessor.srcs/constrs_1
+file mkdir {C:/Users/tharu/Vivado Projects/Nano Processor/NanoProcessor - Vanilla/NanoProcessor/NanoProcessor.srcs/constrs_1/new}
+close [ open {C:/Users/tharu/Vivado Projects/Nano Processor/NanoProcessor - Vanilla/NanoProcessor/NanoProcessor.srcs/constrs_1/new/Basys3Labs.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/tharu/Vivado Projects/Nano Processor/NanoProcessor - Vanilla/NanoProcessor/NanoProcessor.srcs/constrs_1/new/Basys3Labs.xdc}}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+synth_design -rtl -name rtl_1
+launch_simulation
+open_wave_config {C:/Users/tharu/Vivado Projects/Nano Processor/NanoProcessor - Vanilla/NanoProcessor/TB_Nano_Processor_behav.wcfg}
+source TB_Nano_Processor.tcl
+export_ip_user_files -of_objects  [get_files {{C:/Users/tharu/Vivado Projects/Nano Processor/NanoProcessor - Vanilla/NanoProcessor/TB_Nano_Processor_behav.wcfg}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/tharu/Vivado Projects/Nano Processor/NanoProcessor - Vanilla/NanoProcessor/TB_Nano_Processor_behav.wcfg}}
+close_sim
+launch_simulation
+source TB_Nano_Processor.tcl
+close_sim
