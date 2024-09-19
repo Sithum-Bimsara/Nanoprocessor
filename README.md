@@ -48,7 +48,7 @@ The nanoprocessor is implemented using VHDL and designed to run on a BASYS 3 FPG
 ## Team Members
 
 - https://github.com/pererabsdt
-- https://github.com/SithumBimsara20030113
+- https://github.com/Sithum-Bimsara
 - https://github.com/KaveeshaKapuruge
 - https://github.com/jayasinghesasmitha
 
